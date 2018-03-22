@@ -1,15 +1,20 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-      "outDir": "../out-tsc/app",
-      "baseUrl": "./",
-      "module": "es2015",
-      "types": []
-    },
-    "exclude": [
-      "test.ts",
-      "**/*.spec.ts",
-      "app-a/"
-    ]
-  }
-  
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": []
+  },
+  "include": [
+    "typings.d.ts",
+    "polyfills.ts",
+    "main-app-b.ts",
+    "app-b/"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "app-a/"
+  ]
+}
